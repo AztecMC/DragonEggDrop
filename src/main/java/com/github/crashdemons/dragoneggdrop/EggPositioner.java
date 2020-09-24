@@ -65,7 +65,7 @@ public class EggPositioner {
         }
         if(foundLoc==null){
             DragonEggDrop.debugWarn("No land under the dragon could be found.");
-        }else foundLoc.setY(255);
+        }else foundLoc.setY(255);//this isn't necessary but it looks really funny/impressive falling from the sky, and prevents overwriting an existing egg (they stack!)
         
         return foundLoc;
     }
