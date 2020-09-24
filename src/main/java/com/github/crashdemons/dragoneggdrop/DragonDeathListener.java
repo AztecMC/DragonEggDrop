@@ -74,6 +74,8 @@ public class DragonDeathListener implements Listener {
                 }
             }
             else killer.sendMessage("You killed the dragon but it didn't drop an egg.");
+        }else{
+            if(EggPositioner.placeEggNear(loc)) DragonEggDrop.debug("egg placed");
         }
         
     }
