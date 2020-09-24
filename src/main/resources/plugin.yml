@@ -1,0 +1,8 @@
+name: DragonEggDrop
+version: ${project.version}
+description: Drops a dragon-egg when the dragon is killed.
+author: crashdemons
+website: https://github.com/crashdemons/DragonEggDrop
+api-version: 1.13
+
+main: com.github.crashdemons.dragoneggdrop.DragonEggDrop

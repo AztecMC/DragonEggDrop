@@ -1,0 +1,5 @@
+#default dragon droprate
+eggrate: 0.15
+lootingrate: 0.15
+luckrate: 0.15
+pkonly: true
