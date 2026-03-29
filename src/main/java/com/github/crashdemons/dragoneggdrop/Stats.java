@@ -23,7 +23,7 @@ public class Stats {
     public static double getLuck(LivingEntity lentity){
         if(lentity==null) return 0;
         double luck = 0;//0 = no effect
-        AttributeInstance attrib = lentity.getAttribute(Attribute.GENERIC_LUCK);//default is 0
+        AttributeInstance attrib = lentity.getAttribute(Attribute.LUCK);//default is 0
         if(attrib!=null){
             luck = attrib.getValue();
         }
@@ -33,7 +33,7 @@ public class Stats {
         if(player==null) return 0; 
         ItemStack weapon = player.getInventory().getItemInMainHand();
         if(weapon==null) return 0;
-        return weapon.getEnchantmentLevel(Enchantment.LOOT_BONUS_MOBS);
+        return weapon.getEnchantmentLevel(Enchantment.LOOTING);
     }
     
     public static double modifyDroprate(double droprate, double looting, double luck, double lootingrate, double luckrate){
